@@ -1,0 +1,1 @@
+[![Build Status](http://home.gnuhub.com:8080/buildStatus/icon?job=gnuhub-cookbooks)](http://home.gnuhub.com:8080/job/gnuhub-cookbooks/)
