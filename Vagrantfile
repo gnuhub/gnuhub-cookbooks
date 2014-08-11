@@ -24,8 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # - A small VM (RAM < 1024M) is usually enough to verify a little set of isolated cookbooks
   # - Real Travis workers are equipped with 3G of RAM
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = 2048
-    vb.cpus = 4
+    vb.memory = 1500
   end
 
   # Disable automatic box update checking. If you disable this, then
@@ -36,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # The Travis CI Linux worker is currently based on Ubuntu 12.04LTS 64bit
   # Pending: Refer to a basebox with Linux Kernel pinned on version 2.6
   config.vm.define :precise64, primary: true do |ubuntu|
-    ubuntu.vm.box = "ubuntu/precise64"
+    ubuntu.vm.box = "gnuhub-cookbooks-0.box"
   end
 
   # Work in Progress: Support of Ubuntu 14.04LTS (not supported yet)
